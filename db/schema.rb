@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_09_04_111106) do
   end
 
   create_table "transactions", force: :cascade do |t|
-    t.integer "user_account_id"
+    t.integer "user_id"
     t.integer "category_id"
     t.float "amount"
     t.string "kind"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_09_04_111106) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "user_accounts", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name"
     t.float "balance"
     t.datetime "created_at", precision: 6, null: false
