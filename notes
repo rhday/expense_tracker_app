@@ -6,10 +6,14 @@ has_many :categories :through, :transactions
 
 Transaction
 belongs_to :user_account
+belongs_to :category
 :user_account_id - integer
 :amount - float 
 :kind - string
 :date - DateTime
+:category_id - integer
 
 Category
 has_many :user_accounts :through, :transactions
+has_many :transactions 
+:name - string 
