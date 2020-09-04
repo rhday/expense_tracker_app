@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_09_04_111106) do
   end
 
   create_table "transactions", force: :cascade do |t|
-    t.integer "account_id"
+    t.integer "user_account_id"
     t.integer "category_id"
     t.float "amount"
     t.string "kind"
