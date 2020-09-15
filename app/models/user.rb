@@ -20,7 +20,7 @@ class User < ApplicationRecord
                 self.save
             else
                 #if the user has too little funds to carry out a transaction then return a message telling them so
-                return "Balance too low"
+                return 'Balance too low.'
             end 
         end 
     end 
